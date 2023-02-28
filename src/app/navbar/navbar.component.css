@@ -1,0 +1,29 @@
+.navbar{
+  background-color: black;
+}
+.nav-link{
+  padding-left: 72px !important;
+  font-weight: bold;
+  font-size: 19px;
+  color: white;
+}
+.nav-link:hover{
+  color: orange;
+}
+.navbar-brand{
+  font-size: 36px;
+  color: white;
+}
+.navbar-toggler{
+background-color: white;
+}
+h6{
+  left: 24px;
+  position: relative;
+}
+.btn{
+  position: relative;
+  left: 69px;
+  background-color: white;
+  color: black;
+}

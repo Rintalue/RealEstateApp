@@ -1,0 +1,19 @@
+.box{
+  padding: 10px 5px;
+}
+.box img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.box h1{
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+
+}
+.box h1:hover{
+  color: var(--primary-color);
+
+}
