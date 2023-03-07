@@ -13,8 +13,7 @@ import { RentComponent } from './rent/rent.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
-import { ContactformComponent } from './contactform/contactform.component';
-
+import { DivineComponent } from './divine/divine.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +27,8 @@ import { ContactformComponent } from './contactform/contactform.component';
     AboutComponent,
     ContactComponent,
     FooterComponent,
-    ContactformComponent
+    DivineComponent,
+
   ],
   imports: [
     BrowserModule,

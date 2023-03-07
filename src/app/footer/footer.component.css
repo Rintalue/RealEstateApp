@@ -1,0 +1,40 @@
+.page-footer{
+  background-color: whitesmoke;
+}
+p{
+  font-size: 14px;
+}
+a{
+  color: black;
+  text-decoration: blink;
+  line-height: 30px;
+  font-size: 15px;
+}
+.form-control{
+width: 20px;
+}
+.btn{
+  background-color: darkseagreen;
+  color: white;
+  height: 36px;
+  left: 6px;
+  width: 73px;
+}
+i{
+  color: black;
+}
+.font-weight{
+  font-size: 16px;
+}
+#social{
+  bottom: -38px;
+  position: relative;
+}
+i{
+  margin-left: 6px;
+  width: 40px;
+  cursor: pointer;
+  top: 25px;
+  position: relative;
+  display:inline-block;
+}
