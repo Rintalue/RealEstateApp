@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, Renderer2 } from '@angular/core';
+
+import { OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-divine',
@@ -7,9 +9,43 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DivineComponent implements OnInit {
 
-  constructor() { }
+  private showClassAdded = false;
+
+  constructor(private elRef: ElementRef, private renderer: Renderer2) {}
+
+  @HostListener('window:scroll', [])
+onWindowScroll() {
+  const slideElements = this.elRef.nativeElement.querySelectorAll('.slide-in');
+  const fadeElements = this.elRef.nativeElement.querySelectorAll('.fade-in');
+
+  slideElements.forEach((element: HTMLElement) => {
+    const positionFromTop = element.getBoundingClientRect().top;
+    const positionFromBottom = element.getBoundingClientRect().bottom;
+
+    if (positionFromTop - window.innerHeight <= 0 && !element.classList.contains('show')) {
+      this.renderer.addClass(element, 'show');
+    }
+    if (positionFromBottom < 0 || positionFromTop > window.innerHeight) {
+      element.classList.remove('show');
+    }
+  });
+
+  fadeElements.forEach((element: HTMLElement) => {
+    const positionFromTop = element.getBoundingClientRect().top;
+    const positionFromBottom = element.getBoundingClientRect().bottom;
+
+    if (positionFromTop - window.innerHeight <= 0 && !element.classList.contains('show')) {
+      this.renderer.addClass(element, 'show');
+    }
+    if (positionFromBottom < 0 || positionFromTop > window.innerHeight) {
+      element.classList.remove('show');
+    }
+  });
+}
+
 
   ngOnInit(): void {
   }
 
 }
+

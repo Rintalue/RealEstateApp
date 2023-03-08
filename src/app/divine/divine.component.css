@@ -6,12 +6,16 @@ h5{
   line-height: 55px;
   font-size: 14px;
 }
-.img{
+img{
+  position: relative;
+  right: 56px;
+}
+#img{
   width: 56%;
   left: 620px;
   position: relative;
 }
-.img2{
+#img2{
 width: 56%;
 right: 45px;
 position: relative;
@@ -22,22 +26,22 @@ hr{
   left: 180px;
   position: relative;
 }
-.line{
+#line{
   position: relative;
   top: 215px;
 
 }
-.line2{
+#line2{
   position: relative;
   left: 742px;
   top: 300px;
 }
-.word{
+#word{
   position: relative;
   display: inline;
   top: 184px;
 }
-.word2{
+#word2{
   position: relative;
   left: 741px;
   top: 268px;
@@ -76,4 +80,23 @@ hr{
   background-color: #301934;
   padding: 11px 28px;
   cursor: pointer;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.9s, transform 0.9s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateX(0%);
+}
+.slide-in{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.9s, transform 0.9s;
+}
+.slide-in.show{
+  opacity: 1;
+  transform: translateY(0);
 }

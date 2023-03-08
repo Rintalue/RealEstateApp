@@ -27,6 +27,11 @@ ul{
   position: relative;
   bottom: 165px;
   left: 708px;
+
+}
+a{
+  text-decoration: blink;
+  color: black;
 }
 .btn{
   position: relative;
