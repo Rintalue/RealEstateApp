@@ -1,3 +1,4 @@
+
 .box{
   padding: 10px 5px;
 }
@@ -8,12 +9,139 @@
   border-radius: 5px;
 }
 .box h1{
-  font-size: 18px;
+  font-size: 31px;
   margin-top: 20px;
-  font-weight: bold;
+  text-align: center;
 
 }
+.box p{
+  text-align: center;
+}
 .box h1:hover{
-  color: var(--primary-color);
+  color: orange;
 
+}
+.carousel-caption{
+text-align: center;
+}
+
+
+.row img {
+  width: 100%;
+  object-fit: cover;
+  height: 500px;
+  margin: 10px;
+}
+
+
+.header{
+  line-height: 800px;
+  font-size: 57px;
+  color: white;
+  text-decoration: blink;
+  font-weight: bolder;
+
+}
+.slide-in{
+  opacity: 0;
+  transform: translateY(80px);
+  transition: opacity 0.9s, transform 0.9s;
+}
+.slide-in.show{
+  opacity: 1;
+  transform: translateY(0);
+}
+.text{
+  position: relative;
+  bottom: 348px;
+  font-weight: bolder;
+}
+.number{
+  font-size: 31px;
+  font-weight: bolder
+}
+.btn2{
+  position: relative;
+  border: 2px solid black;
+  color: orange;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: #301934;
+  padding: 11px 28px;
+  cursor: pointer;
+  display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+hr{
+  width: 154px;
+  top: -24px;
+  left: 138px;
+  position: relative;
+}
+h4{
+  font-size: 18px;
+}
+.img1{
+  position: relative;
+  width: 35%;
+  left: 895px;
+  text-align: center;
+
+}
+.img2{
+  position: relative;
+  width: 35%;
+  text-align: center;
+  left: -22px;
+}
+.img3{
+  position: relative;
+  width: 35%;
+  left: 895px;
+  text-align: center;
+}
+h5{
+  font-size: 15px;
+}
+h6{
+  position: relative;
+  top: 325px;
+}
+h2{
+  position: relative;
+  top: 345px;
+  font-size: 40px;
+  color: #301934;
+}
+#text2{
+  position: relative;
+  top: 510px;
+
+}
+.btn3{
+  position: relative;
+  top: 78px;
+  right: 450px;
+  border: 2px solid black;
+  color: orange;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: #301934;
+  padding: 11px 28px;
+  cursor: pointer;
+  width: 192px;
+  height: 73px;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.9s, transform 0.9s;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateX(0%);
 }

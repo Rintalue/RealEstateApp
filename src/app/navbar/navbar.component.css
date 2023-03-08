@@ -1,10 +1,10 @@
 .navbar{
-  background-color: black;
+  background-color:  #301934;
 }
 .nav-link{
   padding-left: 72px !important;
   font-weight: bold;
-  font-size: 19px;
+  font-size: 16px;
   color: white;
 }
 .nav-link:hover{
